@@ -29,6 +29,7 @@ figure, p, address {
 
 p {
     line-height: 25px;
+    color:rgba(141,110,4,0.85);
 }
 
 iframe {
@@ -51,9 +52,11 @@ a, a:hover, a:focus, .btn:focus {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: 'Open Sans', sans-serif;
-    color: #252525;
+    color:  #FDE71E;
 }
-
+h4{
+  font-weight: bold;
+}
 main > section {
     padding: 70px 0;
 }
@@ -65,8 +68,8 @@ main > section {
     text-transform: uppercase;
 }
 
-.btn-blue {
-    background-color: rgba(253,231,30, 0.78);
+.btn-gold {
+    background-color: rgba(141,110,4, 0.78);
     box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
     padding: 15px 55px;
     color: #fff;
@@ -454,7 +457,7 @@ h1.navbar-brand {
     height: 100%;
 }
 
-/* Default styles for background colors
+/* Default styles for background colors*/
 
 .btn-effect:after {
     width: 0%;
@@ -481,7 +484,7 @@ h1.navbar-brand {
 .btn-effect:hover:after,
 .btn-effect:active:after {
     width: 100%;
-} */
+}
 
 
 /* Project laughtbox setup */
@@ -513,7 +516,7 @@ h1.navbar-brand {
 ==================================================================*/
 
 #about {
-    background-color:  #FDE71E;
+    background-color:  #8D6E04;
     color: #fff;
 }
 
@@ -738,7 +741,7 @@ ul.external li a:hover {
 }
 
 #agenda .overlay {
-    background-color: rgba(253,231,30, 0.78);
+    background-color: rgba(141,110,4, 0.78);
     padding: 70px 0 40px;
 }
 
@@ -884,7 +887,7 @@ ul.external li a:hover {
 
 .blog-table.featured ul li:last-child,
 .blog-table ul li:last-child:hover {
-    background-color:  #FDE71E;
+    background-color:  #8D6E04;
 }
 
 .blog-table.featured ul li:last-child a,
