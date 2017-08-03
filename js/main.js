@@ -140,14 +140,20 @@ $(document).ready(function(){
 /* appear a div */
 /*==========================================*/
 
-$('.hider') .hide()
-$('aff').on('click', function(event) {
-$('.hider') .hide()
-    var target = $(this).attr('href');
-
-    $('.hider'+target).toggle();
-
+$(".aff").click(function (e) {
+    e.stopPropagation();
+    $(".window").css("display", "none");
 });
+	
+//$('.hider') .hide()
+//$('aff').on('click', function(event) {
+//$('.hider') .hide()
+    //var target = $(this).attr('href');
+
+    //$('.hider'+target).toggle();
+
+//});
+	
 /*$(function switchDisplay(){
     var defaut = document.getElementById('showr');
     var autre = document.getElementById('hider');
