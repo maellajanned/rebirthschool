@@ -140,14 +140,14 @@ $(document).ready(function(){
 /* appear a div */
 /*==========================================*/
 
-/*$('.hider').hide();
+$('.hider').hide();
 $('aff').on('click', function(event) {
 $('.hider') .hide()
     var target = $(this).attr('href');
 
     $('.hider'+target).toggle();
 
-});*/
+});
 /*$(function switchDisplay(){
     var defaut = document.getElementById('showr');
     var autre = document.getElementById('hider');
