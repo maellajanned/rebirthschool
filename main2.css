@@ -9,8 +9,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     line-height: 24px;
     font-size: 16px;
-  /*  color:   #FDE71E;*/
-  color:  #FDE71E;
+    color:  #8D6E04;
 }
 
 figure, p, address {
@@ -19,7 +18,7 @@ figure, p, address {
 
 p {
     line-height: 25px;
-    color:rgba(141,110,4,0.85);
+    color: black;
 }
 
 iframe {
@@ -42,11 +41,9 @@ a, a:hover, a:focus, .btn:focus {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: 'Open Sans', sans-serif;
-    color:  #FDE71E;
+    color: #252525;
 }
-h4{
-  font-weight: bold;
-}
+
 main > section {
     padding: 70px 0;
 }
@@ -59,7 +56,7 @@ main > section {
 }
 
 .btn-gold {
-    background-color: rgba(141,110,4, 0.78);
+    background-color: rgba(179,138,2,0.78);
     box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
     padding: 15px 55px;
     color: #fff;
@@ -70,9 +67,15 @@ main > section {
     color: #fff;
     padding: 12px 35px;
 }
+.btn-border1 {
+    border: 2px solid #8D6E04;
+    color: gold;
+    padding: 12px 35px;
+    margin-top: 5px;
+}
 
-.bg-blue {
-    background-color:  #FDE71E;
+.bg-gold {
+    background-color: #B38A02;
 }
 
 /* Sweep To Right */
@@ -142,7 +145,7 @@ main > section {
 }
 
 .btn-effect:hover, .btn-effect:focus, .btn-effect:active {
-	color:  #FDE71E;
+	color: #B38A02;
 }
 
 .btn-effect:hover:before, .btn-effect:focus:before, .btn-effect:active:before {
@@ -173,7 +176,7 @@ main > section {
 }
 
 .sec-title h2:after {
-    border-bottom: 1px solid  #FDE71E;
+    border-bottom: 1px solid #8D6E04;
     content: "";
     display: block;
     left: 45%;
@@ -447,7 +450,7 @@ h1.navbar-brand {
     height: 100%;
 }
 
-/* Default styles for background colors*/
+/* Default styles for background colors
 
 .btn-effect:after {
     width: 0%;
@@ -474,7 +477,7 @@ h1.navbar-brand {
 .btn-effect:hover:after,
 .btn-effect:active:after {
     width: 100%;
-}
+} */
 
 
 /* Project laughtbox setup */
@@ -488,34 +491,27 @@ h1.navbar-brand {
 }
 
 .fancybox-next span {
-    background: url("../img/right.png") no-repeat scroll center center  #FDE71E;
+    background: url("../img/right.png") no-repeat scroll center center #009ee3;
     height: 50px;
     width: 50px;
     right: 0;
 }
 
 .fancybox-prev span {
-    background: url("../img/left.png") no-repeat scroll center center  #FDE71E;
+    background: url("../img/left.png") no-repeat scroll center center #009ee3;
     height: 50px;
     width: 50px;
     left: 0;
 }
-/*==================================================
-  div à afficher
-  =================================================*/
-/*
-  #too{
-    display: none;
-    width: 552px;
-    margin: 10 40 2 30;
-    border: 5px;
-  }*/
+
 /*=================================================================
 	About
 ==================================================================*/
-
+#hider{
+  display: none;
+}
 #about {
-    background-color:  #8D6E04;
+    background-color: #8D6E04;
     color: #fff;
 }
 
@@ -573,7 +569,9 @@ h1.navbar-brand {
 /*=================================================================
 	schools
 ==================================================================*/
-
+.page_school{
+  color: #B38A02;
+}
 .school-icon {
     border: 3px solid transparent;
     display: inline-block;
@@ -595,9 +593,9 @@ h1.navbar-brand {
 }
 
 .school-item:hover .school-icon {
-    border: 3px solid #009ee3;
+    border: 3px solid #8D6E04;
     margin-bottom: 20px;
-    color: #009ee3;
+    color: #8D6E04;
 }
 
 .school-icon i {
@@ -612,7 +610,6 @@ h1.navbar-brand {
     font-size: 20px;
     text-transform: uppercase;
 }
-
 
 /*=================================================================
 	method
@@ -683,7 +680,7 @@ ul.external li {
 
 ul.external li a {
     background-color: rgba(255, 255, 255, 0.9);
-    color:   #FDE71E;
+    color:#FDE71E;
     display: block;
     padding: 10px 18px 13px;
 
@@ -695,7 +692,7 @@ ul.external li a {
 }
 
 ul.external li a:hover {
-    background-color:  #FDE71E;
+    background-color: #009EE3;
     color: #fff;
 }
 
@@ -716,7 +713,7 @@ ul.external li a:hover {
 }
 
 .fancybox-title p {
-    color:   #FDE71E;
+    color:#FDE71E;
     font-size: 16px;
     line-height: 22px;
 }
@@ -731,7 +728,7 @@ ul.external li a:hover {
 
 
 #agenda {
-    background-image: url(../img/parallax/agend.jpg);
+    background-image: url(../img/parallax/agena.jpg);
     padding: 0;
     color: #fff;
 }
@@ -741,17 +738,17 @@ ul.external li a:hover {
 }
 
 #agenda .overlay {
-    background-color: rgba(141,110,4, 0.78);
+    background-color: rgba(179,138,2, 0.78);
     padding: 70px 0 40px;
 }
 
-.agend-item {
+.agenda-item {
     margin: 0 auto;
     padding-bottom: 50px;
     width: 64%;
 }
 
-.agend-item img {
+.agenda-item img {
     border: 3px solid #fff;
     border-radius: 50%;
     display: inline-block;
@@ -759,12 +756,12 @@ ul.external li a:hover {
     max-width: 100px;
 }
 
-.agend-item > div {
+.agenda-item > div {
     line-height: 30px;
     position: relative;
 }
 
-.agend-item > div:before {
+.agenda-item > div:before {
     background-image: url("../img/icons/quotes.png");
     background-repeat: no-repeat;
     bottom: 127px;
@@ -774,7 +771,7 @@ ul.external li a:hover {
     width: 45px;
 }
 
-.agend-item > div:after {
+.agenda-item > div:after {
     background-image: url("../img/icons/quotes.png");
     background-position: -58px 0;
     background-repeat: no-repeat;
@@ -785,7 +782,7 @@ ul.external li a:hover {
     width: 45px;
 }
 
-.agend-item > div > span {
+.agenda-item > div > span {
     display: inline-block;
     font-weight: 700;
     margin: 40px 0 30px;
@@ -807,9 +804,9 @@ ul.external li a:hover {
     color: #fff;
 }
 
-/*.blog-table {
+.blog-table {
     border: 1px solid #e3e3e3;
-}*/
+}
 
 .blog-table.featured {
     -webkit-box-shadow: 0 4px 5px rgba(0,0,0,0.19);
@@ -838,7 +835,7 @@ ul.external li a:hover {
 }
 
 .blog-table.featured .value {
-    background-color:  #FDE71E;
+    background-color: #009EE3;
     color: #fff;
 }
 
@@ -887,7 +884,7 @@ ul.external li a:hover {
 
 .blog-table.featured ul li:last-child,
 .blog-table ul li:last-child:hover {
-    background-color:  #8D6E04;
+    background-color: #B38A02;
 }
 
 .blog-table.featured ul li:last-child a,
@@ -942,15 +939,17 @@ ul.external li a:hover {
 }
 
 .social-button li a:hover {
-    color: #008ECC;
-    border: 2px solid #008ECC;
+    color: #8D6E04;
+    border: 2px solid #8D6E04;
 }
 
 
 /*=================================================================
 	Contact
 ==================================================================*/
-
+#contact{
+  background-color: #B38A02;
+}
 .input-field {
     margin-bottom: 10px;
 }
@@ -959,7 +958,7 @@ ul.external li a:hover {
     border: 1px solid #ececec;
     border-radius: 0;
     box-shadow: none;
-    color:   #FDE71E;
+    color:#FDE71E;
     font-size: 16px;
     height: 50px;
 }
@@ -974,15 +973,15 @@ textarea.form-control {
 }
 
 #submit:before {
-  background-color: #0A85BB;
+  background-color: #B38A02;
 }
 
 #submit.btn-effect:after {
-  background: #2E2E2E;
+  background: #8D6E04;
 }
 
 .contact-details h3 {
-    border-bottom: 1px solid #008ecc;
+    border-bottom: 1px solid #8D6E04;
     font-weight: 700;
     margin-bottom: 15px;
     padding-bottom: 15px;
@@ -1040,7 +1039,9 @@ textarea.form-control {
     margin-bottom: 15px;
     text-transform: uppercase;
 }
-
+.foot{
+  color: #B38A02;
+}
 .subscribe-form {
     position: relative;
 }
@@ -1124,7 +1125,7 @@ textarea.form-control {
 }
 
 .footer-social ul li a:hover {
-    color:  #FDE71E;
+    color: #009EE3;
 }
 
 .footer-content > p {
@@ -1154,7 +1155,7 @@ textarea.form-control {
         bottom: -151px;
     }
 
-    .agend-item > div:after {
+    .agenda-item > div:after {
         bottom: -40px;
     }
 }
@@ -1193,16 +1194,16 @@ textarea.form-control {
         width: 48%;
     }
 
-/* agend */
-    .agend-item {
+/* agenda */
+    .agenda-item {
         width: 100%;
     }
 
-    .agend-item {
+    .agenda-item {
         width: 80%;
     }
 
-    .agend-item > div:after {
+    .agenda-item > div:after {
         bottom: -35px;
     }
 
@@ -1248,6 +1249,10 @@ textarea.form-control {
     .navbar-inverse .navbar-toggle:hover,
     .navbar-inverse .navbar-toggle:focus {
         background-color: transparent;
+    }
+    nav >ul> li > a:hover{
+      cursor: pointer;
+      background-color: #8D6E04 !important;
     }
 
 /* slider */
@@ -1318,17 +1323,17 @@ textarea.form-control {
         font-size: 14px;
     }
 
-/* agend */
-    .agend-item {
+/* agenda */
+    .agenda-item {
         width: 95%;
     }
 
-    .agend-item > div:before,
-    .agend-item > div:after {
+    .agenda-item > div:before,
+    .agenda-item > div:after {
         background-image: none;
     }
 
-    .agend-item > div > span {
+    .agenda-item > div > span {
         margin: 30px 0 20px;
     }
 
@@ -1409,12 +1414,12 @@ textarea.form-control {
         bottom: -132px;
     }
 
-/* agend */
-    .agend-item {
+/* agenda */
+    .agenda-item {
         width: 80%;
     }
 
-    .agend-item > div:before {
+    .agenda-item > div:before {
         bottom: 160px;
     }
 

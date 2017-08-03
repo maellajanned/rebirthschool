@@ -136,6 +136,25 @@ $(document).ready(function(){
 		navigationText: ["<i class='fa fa-angle-left fa-lg'></i>","<i class='fa fa-angle-right fa-lg'></i>"]
 	});
 
+/*===================================================================*/
+/* appear a div */
+/*==========================================*/
+
+$('.hider') .hide()
+$('aff').on('click', function(event) {
+$('.hider') .hide()
+    var target = $(this).attr('href');
+
+    $('.hider'+target).toggle();
+
+});
+/*$(function switchDisplay(){
+    var defaut = document.getElementById('showr');
+    var autre = document.getElementById('hider');
+
+    defaut.css.display = (defaut.css.display == 'none' ? '' : 'none');
+    autre.css.display = (autre.css.display == 'none' ? '' : 'none');
+});*/
 
 	/* ========================================================================= */
 	/*	Featured Project Lightbox
