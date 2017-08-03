@@ -148,14 +148,16 @@ $('.hider') .hide()
     $('.hider'+target).toggle();
 
 });
-/*$(function switchDisplay(){
-    var defaut = document.getElementById('showr');
-    var autre = document.getElementById('hider');
-
-    defaut.css.display = (defaut.css.display == 'none' ? '' : 'none');
-    autre.css.display = (autre.css.display == 'none' ? '' : 'none');
-});*/
-
+function toggle_div(bouton, id) { // On déclare la fonction toggle_div qui prend en param le bouton et un id
+  var div = document.getElementById(id); // On récupère le div ciblé grâce à l'id
+  if(div.style.display=="none") { // Si le div est masqué...
+    div.style.display = "block"; // ... on l'affiche...
+    bouton.innerHTML = "-"; // ... et on change le contenu du bouton.
+  } else { // S'il est visible...
+    div.style.display = "none"; // ... on le masque...
+    bouton.innerHTML = "+"; // ... et on change le contenu du bouton.
+  }
+}
 
 
 	/* ========================================================================= */

@@ -19,10 +19,20 @@ figure, p, address {
 p {
     line-height: 25px;
     color: black;
+
+}
+
+.p_coach{
+  text-align: justify;
 }
 
 iframe {
     border: 0;
+}
+
+.img_coach{
+  margin-top: 50px;
+  border-radius: 3px;
 }
 
 a {
@@ -1242,6 +1252,12 @@ textarea.form-control {
     }
 
 /*navigation*/
+
+    #nav li a:hover{
+      cursor: pointer;
+      color: #8D6E04 !important;
+    }
+
     .navbar-inverse .navbar-toggle {
         border-color: #fff;
     }
@@ -1250,10 +1266,7 @@ textarea.form-control {
     .navbar-inverse .navbar-toggle:focus {
         background-color: transparent;
     }
-    nav >ul> li > a:hover{
-      cursor: pointer;
-      background-color: #8D6E04 !important;
-    }
+
 
 /* slider */
     .caption-content h2 {
