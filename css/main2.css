@@ -72,16 +72,18 @@ main > section {
     color: #fff;
 }
 
+.btn-white {
+    background-color:white;
+    box-shadow: 0 -2px 0 rgba(179,138,2, 0.15) inset;
+    padding: 15px 55px;
+    color: rgba(179,138,2,0.78);
+}
+
+
 .btn-border {
     border: 2px solid #fff;
     color: #fff;
     padding: 12px 35px;
-}
-.btn-border1 {
-    border: 2px solid #8D6E04;
-    color: gold;
-    padding: 12px 35px;
-    margin-top: 5px;
 }
 
 .bg-gold {
@@ -117,7 +119,6 @@ main > section {
 
 	-moz-osx-font-smoothing: grayscale;
 }
-
 .btn-effect:before {
 	content: "";
 	position: absolute;
@@ -155,7 +156,7 @@ main > section {
 }
 
 .btn-effect:hover, .btn-effect:focus, .btn-effect:active {
-	color: #B38A02;
+	color:  #FDE71E;
 }
 
 .btn-effect:hover:before, .btn-effect:focus:before, .btn-effect:active:before {
@@ -517,9 +518,7 @@ h1.navbar-brand {
 /*=================================================================
 	About
 ==================================================================*/
-#hider{
-  display: none;
-}
+
 #about {
     background-color: #8D6E04;
     color: #fff;
@@ -723,7 +722,7 @@ ul.external li a:hover {
 }
 
 .fancybox-title p {
-    color:#FDE71E;
+    color:black;
     font-size: 16px;
     line-height: 22px;
 }

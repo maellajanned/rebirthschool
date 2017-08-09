@@ -20,11 +20,10 @@
 
 		<!-- CSS
 		================================================== -->
-
+    <!-- Main Stylesheet-->
+    <link rel="stylesheet" href="css/main2.css" media="screen" title="no title">
+    <!-- Fontawesome Icon font -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" href="main2.css" media="screen" title="no title">
-		<!-- Fontawesome Icon font -->
         <link rel="stylesheet" href="css/font-awesome.min.css">
 		<!-- bootstrap.min -->
         <link rel="stylesheet" href="css/jquery.fancybox.css">
@@ -36,14 +35,13 @@
         <link rel="stylesheet" href="css/slit-slider.css">
 		<!-- bootstrap.min -->
         <link rel="stylesheet" href="css/animate.css">
-	  <!-- Main Stylesheet-->
-        	<!--    <link rel="stylesheet" href="css/main.css">-->
 		<!-- Modernizer Script for old Browsers -->
         <script src="js/modernizr-2.6.2.min.js"></script>
 
+
     </head>
 
-    <body id="body">
+    <body id="body" ng-app="myApp">
 
 		<!-- preloader -->
 		<div id="preloader">
@@ -197,21 +195,21 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-7 col-md-offset-1 wow animated fadeInRight">
-              <div id="show" class="welcome-block show">
+            <div class="col-md-7 col-md-offset-1 wow animated fadeInRight" ng-controller="myCtrl">
+              <div id="show" ng-show="IsVisible" class="welcome-block  ">
                 <h3>Bienvenue chez NPB</h3>
                    <div class="message-body">
                   <img src="img/member-1.jpg" class="pull-left" alt="member">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
                    </div>
-                    <a href="#" id="aff" class="btn btn-border btn-effect pull-right " onclick="toggle_div(this, 'hider');">En Savoir Plus</a>
+                    <a href="#hider" ng-click="ShowHide()" class="btn btn-border btn-effect pull-right">En Savoir Plus</a>
                 </div>
-                <div id="hider" class="welcome-block hide">
+                <div  id="hider" ng-hide="IsVisible" class="welcome-block ">
                   <h3>Chez NPB</h3>
-                     <div class="message-body">
+                     <div class="message-body" >
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
                      </div>
-                      <a href="javascript:switchDisplay();" class="btn btn-border btn-effect pull-right">Retour</a>
+                      <a href="#show" ng-click="ShowHide()"class="btn btn-border btn-gold btn-effect pull-right">Retour</a>
                   </div>
             </div>
           </div>
@@ -296,74 +294,80 @@
 
 						<ul class="project-wrapper wow animated fadeInUp">
 							<li class="method-item">
-								<img src="img/method/item.jpg" class="img-responsive" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat">
+								<img src="img/method/item.jpg" class="img-responsive" alt="">
 								<figcaption class="mask">
 									<h3>Visualisation</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
+									<p>Vision - Mission - Plan d'action <br>
+                    La première étape vers un succès certain. </p>
 								</figcaption>
 								<ul class="external">
-									<li><a class="fancybox" title="Araund The world" data-fancybox-group="works" href="img/method/item.jpg"><i class="fa fa-search"></i></a></li>
-									<li><a href=""><i class="fa fa-link"></i></a></li>
+									<li><a class="fancybox" title="VISUALISATION" data-fancybox-group="works" href="img/method/item.jpg"><i class="fa fa-search"></i></a></li>
+									<li><a href="visual.html"><i class="fa fa-link"></i></a></li>
 								</ul>
 							</li>
 
 							<li class="method-item">
-								<img src="img/method/item2.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
+								<img src="img/method/item2.jpg" class="img-responsive" alt="Maîtrise - Gestion -Stimulation ">
 								<figcaption class="mask">
 									<h3>Maitrise</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
+									<p>Maîtrise - Gestion -Stimulation <br>
+                    Votre force : votre intelligence émotionnelle </p>
 								</figcaption>
 								<ul class="external">
 									<li><a class="fancybox" title="Wall street" href="img/slider/banner.jpg" data-fancybox-group="works" ><i class="fa fa-search"></i></a></li>
-									<li><a href=""><i class="fa fa-link"></i></a></li>
+									<li><a href="mait.html"><i class="fa fa-link"></i></a></li>
 								</ul>
 							</li>
 
 							<li class="method-item">
-								<img src="img/method/item3.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
+								<img src="img/method/item3.jpg" class="img-responsive" alt="Gérer - Planifier - Structurer">
 								<figcaption class="mask">
 									<h3>Gestion du Temps</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
+									<p>Gérer - Planifier - Structurer <br>
+            Pour une productivité optimale en tous points</p>
 								</figcaption>
 								<ul class="external">
 									<li><a class="fancybox" title="Behind The world" data-fancybox-group="works" href="img/method/item3.jpg"><i class="fa fa-search"></i></a></li>
-									<li><a href=""><i class="fa fa-link"></i></a></li>
+									<li><a href="gest.html"><i class="fa fa-link"></i></a></li>
 								</ul>
 							</li>
 
 							<li class="method-item">
-								<img src="img/method/item4.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry.">
+								<img src="img/method/item4.jpg" class="img-responsive" alt="Travail - Foi - Persévérance">
 								<figcaption class="mask">
 									<h3>Perséverance</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
+									<p>Travail - Foi - Persévérance <br>
+                    Gage d'une prospérité et d'un bonheur assuré</p>
 								</figcaption>
 								<ul class="external">
 									<li><a class="fancybox" title="Wall street 4" data-fancybox-group="works" href="img/method/item4.jpg"><i class="fa fa-search"></i></a></li>
-									<li><a href=""><i class="fa fa-link"></i></a></li>
+									<li><a href="perse.html"><i class="fa fa-link"></i></a></li>
 								</ul>
 							</li>
 
 							<li class="method-item">
-								<img src="img/method/item5.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
+								<img src="img/method/item5.jpg" class="img-responsive" alt="Rencontrer - Echanger - S'entraider ">
 								<figcaption class="mask">
 									<h3>Réseauter</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
+									<p>Rencontrer - Echanger - S'entraider <br>
+                    Bâtir son réseau et booster son business </p>
 								</figcaption>
 								<ul class="external">
 									<li><a class="fancybox" title="Wall street 5" data-fancybox-group="works" href="img/method/item5.jpg"><i class="fa fa-search"></i></a></li>
-									<li><a href=""><i class="fa fa-link"></i></a></li>
+									<li><a href="res.html"><i class="fa fa-link"></i></a></li>
 								</ul>
 							</li>
 
 							<li class="method-item">
-								<img src="img/method/item6.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
+								<img src="img/method/item6.jpg" class="img-responsive" alt="Gratitude - Gratitude- Gratitude ">
 								<figcaption class="mask">
 									<h3>Remerciements</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
+									<p>Gratitude - Gratitude- Gratitude
+                    Gage de bonne santé physique et relationnelle </p>
 								</figcaption>
 								<ul class="external">
 									<li><a class="fancybox" title="Wall street 6" data-fancybox-group="works" href="img/method/item6.jpg"><i class="fa fa-search"></i></a></li>
-									<li><a href=""><i class="fa fa-link"></i></a></li>
+									<li><a href="merc.html"><i class="fa fa-link"></i></a></li>
 								</ul>
 							</li>
 						</ul>
@@ -581,7 +585,9 @@ crossorigin="anonymous"></script>
         <script src="js/jquery.ba-cond.min.js"></script>
 		<!-- onscroll animation -->
         <script src="js/wow.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 		<!-- Custom Functions -->
+        <script src="js/protactor.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

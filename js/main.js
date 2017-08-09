@@ -111,6 +111,9 @@ $(document).ready(function(){
             $("#navigation").addClass("animated-header");
         }
     });
+		$(function() {
+  $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+});
 
 	/* ========================================================================= */
 	/*	Fix Slider Height
